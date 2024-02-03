@@ -1,7 +1,7 @@
 # Capstone-Documentation
 Separate written documentation for our capstone project.
 
-To read our documentation please visit the [Documentation Website]!
+To read our documentation please visit the [Documentation Website](https://scrunkly-capstone.github.io/Capstone-Documentation/)!
 
 ## Editing The Documentation
 Our documentation consists of simple Markdown files that MKDocs generates into static HTML files when deployed. Any text editor and some knowledge of Markdown will do. You do not need to install MKDocs; unless you want a live-preview or need to deploy.
@@ -10,3 +10,5 @@ You can install MKDocs using section in their [Getting Started Page](https://www
 
 ## Deploying Documentation
 Deployment will be done by the acting Team Lead.
+
+When the documentation is ready you can use `mkdocs gh-deploy` to push the current version to the existing GitHub Pages site.

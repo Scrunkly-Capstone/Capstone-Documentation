@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Project Backlog - My Docs</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
+        <link rel="canonical" href="https://scrunkly-capstone.github.io/Capstone-Documentation/Team%20Process/CodingGuidelines/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Coding Guidelines - Animal-Dex Project Documentation</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
@@ -20,7 +20,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="..">My Docs</a>
+                <a class="navbar-brand" href="../..">Animal-Dex Project Documentation</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -31,13 +31,24 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href=".." class="nav-link">Welcome to MkDocs</a>
+                                <a href="../.." class="nav-link">AnimalDex</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../CodingGuidelines/" class="nav-link">Coding Guidelines</a>
-                            </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">Project Backlog</a>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Team Process <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Coding Guidelines</a>
+</li>
+                                    
+<li>
+    <a href="../Maintaining%20Documentation/" class="dropdown-item">Maintaining Documentation</a>
+</li>
+                                    
+<li>
+    <a href="../ProjectBacklog/" class="dropdown-item">Project Backlog</a>
+</li>
+                                </ul>
                             </li>
                         </ul>
 
@@ -48,14 +59,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../CodingGuidelines/" class="nav-link">
+                                <a rel="prev" href="../.." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../Maintaining%20Documentation/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/Scrunkly-Capstone/Capstone-Documentation/edit/master/docs/Team Process/CodingGuidelines.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -75,13 +89,21 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#project-backlog" class="nav-link">Project Backlog</a>
+            <li class="nav-item" data-level="1"><a href="#coding-guidelines" class="nav-link">Coding Guidelines</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#user-stories" class="nav-link">User Stories</a>
+            <li class="nav-item" data-level="2"><a href="#feature-branching" class="nav-link">Feature Branching</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#tags" class="nav-link">Tags</a>
+            <li class="nav-item" data-level="2"><a href="#documentation-principles" class="nav-link">Documentation Principles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#api-documentation" class="nav-link">API Documentation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#web-based-documentation" class="nav-link">Web Based Documentation</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -92,17 +114,18 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="project-backlog">Project Backlog</h1>
-<h2 id="user-stories">User Stories</h2>
-<p>It is the job of the Product Owner and Scrum Master to manage the product backlog. Team members will be directly assigned to (usually) one story at a time, and will be responsible for completing it's tasks in a timely manner.</p>
-<p>Team members need to pay attention to their assigned user stories and be mindful of how they work with eachother. Some stories may be dependent on others, so team members should be aware of time constraints and strive to complete dependancy tasks as soon as possible.</p>
-<h2 id="tags">Tags</h2>
-<h3 id="critical-security-story">Critical Security Story</h3>
-<p>This story represents any security related story, bugfix, or feature that needs to be fixed ASAP. Our Cybersecurity Lead can create and schedule these as needed.</p>
-<h3 id="functional">Functional</h3>
-<p>Functional user stories implement tangible features in the product. They are often immediately usable.</p>
-<h3 id="nonfunctional">Nonfunctional</h3>
-<p>This user story does not provide any immediate features but instead provides other utilities. This can often simply be updating the documentation, configuring a tool, or performing research.</p></div>
+<h1 id="coding-guidelines">Coding Guidelines</h1>
+<h2 id="feature-branching">Feature Branching</h2>
+<p>We will use feature branching to isolate distinct segments to ensure they do not interfere with the primary deployment of the app or with other features in development. To the developers; this means when you set out on a card, you'll need to create a new branch with a reasonably identifyable name relating to the card. When you clone the repo, be sure to switch to that branch and work within it.</p>
+<p>When you are done, or periodically throughout your work. Be sure to <code>git pull</code> in both your feature branch and the main branch to keep them up to date. You'll need to pull in updates made in main.</p>
+<p><strong>In your feature branch</strong> (not main!) use <code>git merge main</code> to merge in changes from main. This may create some git conflicts; but these are easy enough to resolve. Your IDE will usually be able to highlight them for you; just pick what looks like the most up to date versions.</p>
+<p>Once you are finished and you've updated your branch to the changes in main: go to your branch on GitHub and create a pull request. This will allow the rest of the team, especially the Coding Lead and Cybersecurity Lead to verify your code is valid and doesn't cause any immediate security vulnerabilities. Once the team approves your feature it will be merged into Main!</p>
+<h2 id="documentation-principles">Documentation Principles</h2>
+<p>To ensure our software is maintainable and reusable, documentation of our code is a requirement. All non-emergency code merged into the <code>main</code> branch of our primary repo should have relevant in-line documentation. It is the developer who is submitting the code to repo's responsiblity to write the appropriate documentation.</p>
+<h2 id="api-documentation">API Documentation</h2>
+<p>Much of our chosen languages have documentation generating comment syntax. This should be used whenever available.</p>
+<h2 id="web-based-documentation">Web Based Documentation</h2>
+<p>Non-in-code documentation should be written on this documentation site.</p></div>
             </div>
         </div>
 
@@ -110,14 +133,14 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../js/jquery-3.6.0.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
         <script>
-            var base_url = "..",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../js/base.js"></script>
-        <script src="../search/main.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

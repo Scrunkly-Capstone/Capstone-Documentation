@@ -6,6 +6,9 @@ It is the job of the Product Owner and Scrum Master to manage the product backlo
 
 Team members need to pay attention to their assigned user stories and be mindful of how they work with eachother. Some stories may be dependent on others, so team members should be aware of time constraints and strive to complete dependancy tasks as soon as possible.
 
+### Acceptance Criteria
+Acceptance criteria are simple rules or targets to hit in relation to each card. They are meant to be milestones in that tasks completion and need to be met in order for a task to be considered done. If you think an acceptance criteria doesn't apply or need more clarification please reach out to the Team Lead.
+
 
 ## Tags
 

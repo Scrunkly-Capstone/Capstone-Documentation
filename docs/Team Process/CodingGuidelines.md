@@ -1,5 +1,10 @@
 # Coding Guidelines
 
+## Main Branch Write Protections
+We use main branch protection to avoid accidentally sending experimental code to production. When working on code, please base your feature branch off of `dev`, and when you're ready to submit, pull any updates from dev and create a pull request. The rest of the team will review the pull request and if it's acceptable will approve and merge it into `dev`. 
+
+`main` will be updated from `dev` whenever there is a need to update the production version of the site.
+
 ## Feature Branching
 We will use feature branching to isolate distinct segments to ensure they do not interfere with the primary deployment of the app or with other features in development. To the developers; this means when you set out on a card, you'll need to create a new branch with a reasonably identifyable name relating to the card. When you clone the repo, be sure to switch to that branch and work within it.
 

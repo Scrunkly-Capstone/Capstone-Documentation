@@ -91,6 +91,10 @@
             
             <li class="nav-item" data-level="1"><a href="#coding-guidelines" class="nav-link">Coding Guidelines</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#main-branch-write-protections" class="nav-link">Main Branch Write Protections</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#feature-branching" class="nav-link">Feature Branching</a>
               <ul class="nav flex-column">
               </ul>
@@ -115,6 +119,9 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="coding-guidelines">Coding Guidelines</h1>
+<h2 id="main-branch-write-protections">Main Branch Write Protections</h2>
+<p>We use main branch protection to avoid accidentally sending experimental code to production. When working on code, please base your feature branch off of <code>dev</code>, and when you're ready to submit, pull any updates from dev and create a pull request. The rest of the team will review the pull request and if it's acceptable will approve and merge it into <code>dev</code>. </p>
+<p><code>main</code> will be updated from <code>dev</code> whenever there is a need to update the production version of the site.</p>
 <h2 id="feature-branching">Feature Branching</h2>
 <p>We will use feature branching to isolate distinct segments to ensure they do not interfere with the primary deployment of the app or with other features in development. To the developers; this means when you set out on a card, you'll need to create a new branch with a reasonably identifyable name relating to the card. When you clone the repo, be sure to switch to that branch and work within it.</p>
 <p>When you are done, or periodically throughout your work. Be sure to <code>git pull</code> in both your feature branch and the main branch to keep them up to date. You'll need to pull in updates made in main.</p>

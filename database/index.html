@@ -4,23 +4,23 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
-        <link rel="canonical" href="https://scrunkly-capstone.github.io/Capstone-Documentation/">
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Animal-Dex Project Documentation</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="canonical" href="https://scrunkly-capstone.github.io/Capstone-Documentation/database/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Database - Animal-Dex Project Documentation</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">Animal-Dex Project Documentation</a>
+                <a class="navbar-brand" href="..">Animal-Dex Project Documentation</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -30,33 +30,33 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">AnimalDex</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../API%20Routes/" class="nav-link">API Routes</a>
+                            </li>
                             <li class="navitem active">
-                                <a href="." class="nav-link">AnimalDex</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="API%20Routes/" class="nav-link">API Routes</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="database/" class="nav-link">Database</a>
+                                <a href="./" class="nav-link">Database</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Team Process <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="Team%20Process/CodingGuidelines/" class="dropdown-item">Coding Guidelines</a>
+    <a href="../Team%20Process/CodingGuidelines/" class="dropdown-item">Coding Guidelines</a>
 </li>
                                     
 <li>
-    <a href="Team%20Process/Maintaining%20Documentation/" class="dropdown-item">Maintaining Documentation</a>
+    <a href="../Team%20Process/Maintaining%20Documentation/" class="dropdown-item">Maintaining Documentation</a>
 </li>
                                     
 <li>
-    <a href="Team%20Process/ProjectBacklog/" class="dropdown-item">Project Backlog</a>
+    <a href="../Team%20Process/ProjectBacklog/" class="dropdown-item">Project Backlog</a>
 </li>
                                     
 <li>
-    <a href="Team%20Process/Tests/" class="dropdown-item">Tests</a>
+    <a href="../Team%20Process/Tests/" class="dropdown-item">Tests</a>
 </li>
                                 </ul>
                             </li>
@@ -69,17 +69,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../API%20Routes/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="API%20Routes/" class="nav-link">
+                                <a rel="next" href="../Team%20Process/CodingGuidelines/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/Scrunkly-Capstone/Capstone-Documentation/edit/master/docs/index.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/Scrunkly-Capstone/Capstone-Documentation/edit/master/docs/database.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -99,8 +99,16 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#animaldex" class="nav-link">AnimalDex</a>
+            <li class="nav-item" data-level="1"><a href="#database" class="nav-link">Database</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#install" class="nav-link">Install</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#connet-to-the-database" class="nav-link">Connet to the Database</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -108,9 +116,35 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="animaldex">AnimalDex</h1>
-<p>Real-time Animal Sighting Sharing and Verification Network</p>
-<p>Please use the navigation bar above to browse our documentation pages!</p></div>
+<h1 id="database">Database</h1>
+<h2 id="install">Install</h2>
+<ol>
+<li>Navigate to this URL https://www.pgadmin.org/download/</li>
+<li>Under the heading that says pgAdmin 4, select the operating system you are using.</li>
+<li>Follow the intallation instructions it gives you.</li>
+</ol>
+<h2 id="connet-to-the-database">Connet to the Database</h2>
+<ol>
+<li>Open pgAdmin 4: Launch the pgAdmin 4 application on your computer.</li>
+<li>Register a new server: In the pgAdmin 4 interface, right-click on "Servers" in the left-side browser tree, and select "Register” -&gt; “Server"</li>
+<li>Configure server details: In the "Register - Server" window, you will see multiple tabs - "General", "Connection", "SSL", and others. Fill in the following details:<ul>
+<li>General tab<ul>
+<li>Name: Provide a name for the connection (e.g., "myAzureFlexInstance").</li>
+</ul>
+</li>
+<li>Connection tab<ul>
+<li>Hostname/address: Enter nature-dex.postgres.database.azure.com</li>
+<li>Port: Leave the port number as is (default is 5432) if you don't want to connect through pgBouncer. If you are using PgBouncer for connection pooling, change the port number to 6432.</li>
+<li>Maintenance database: Leave the default</li>
+<li>Username: Enter naturedex</li>
+<li>Password: Click on the "Save password" checkbox if you want the password to be preserved and enter the corresponding password for the user.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Save the configuration: Click the "Save" button to save the server registration. pgAdmin 4 will now establish a connection to your Azure Database for PostgreSQL Flexible Server.</li>
+<li>Access the database: Once connected, you can expand the server in the browser tree to view databases, schemas, and tables. You can also interact with the server using the built-in query tool and manage your database objects.</li>
+</ol></div>
             </div>
         </div>
 
@@ -118,14 +152,14 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -190,8 +224,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.5.3
-Build Date UTC : 2024-03-13 19:15:01.769387+00:00
--->
